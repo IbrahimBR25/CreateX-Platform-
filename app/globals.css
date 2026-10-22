@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: only light;
+  --bg-main: #F4F6FA;
+  --bg-card: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --text-primary: #303747;
+  --text-secondary: #8A93A3;
+  --border-subtle: #E7EBF2;
+  --pastel-lavender: #D0CBFF;
+  --pastel-blue: #BDEAF8;
+  --pastel-yellow: #FFE681;
+  --pale-blue-select: #DFF4FC;
+  --accent-cyan: #35B8D5;
+}
+
+html,
+body {
+  color-scheme: only light;
+  forced-color-adjust: none;
+  background-color: #F4F6FA;
+  color: #303747;
+  font-family: 'Inter', 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  min-height: 100dvh;
+}
+
+:focus-visible {
+  outline: 2px solid #35B8D5;
+  outline-offset: 2px;
+}
+
+:lang(ar) * {
+  letter-spacing: normal !important;
+}
+:lang(ar) body {
+  line-height: 1.7;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Explicit Light Pastel Design System Classes */
+.sh-page {
+  background-color: #F4F6FA;
+  color: #303747;
+}
+
+.sh-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E7EBF2;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px 0 rgba(48, 55, 71, 0.035);
+}
+
+.sh-surface-secondary {
+  background-color: #F8FAFC;
+  border: 1px solid #E7EBF2;
+}
+
+.sh-kpi-lavender {
+  background-color: #D0CBFF;
+  color: #303747;
+  border-radius: 16px;
+}
+
+.sh-kpi-yellow {
+  background-color: #FFE681;
+  color: #303747;
+  border-radius: 16px;
+}
+
+.sh-kpi-blue {
+  background-color: #BDEAF8;
+  color: #303747;
+  border-radius: 16px;
+}
+
+.sh-nav-active {
+  background-color: #DFF4FC;
+  color: #303747;
+}
+
+.sh-badge-success {
+  background-color: #EAF7F1;
+  color: #1E7E5A;
+  border: 1px solid #C5E9D8;
+}
+
+.sh-badge-warning {
+  background-color: #FFF8DB;
+  color: #9A6712;
+  border: 1px solid #F5E09B;
+}
+
+.sh-badge-error {
+  background-color: #FDF0F2;
+  color: #B83B4A;
+  border: 1px solid #F5CED4;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F6FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5DCE8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8C2D4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
